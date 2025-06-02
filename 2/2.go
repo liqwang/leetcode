@@ -1,7 +1,10 @@
+// https://leetcode.com/problems/add-two-numbers
 package solution
 
 import . "github.com/liqwang/leetcode/lib"
 
+// Time: O(max(m,n))
+// Space: O(1), not includes the necessary cost of the returned linked list
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     dummyHead := &ListNode{Val: 0}
     cur := dummyHead
